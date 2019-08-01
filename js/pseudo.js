@@ -5,8 +5,12 @@
 (function() {
   var make_pseudo = function() {
     window.android = {
-      test: function() { return 99; },
-      filesdirectory: function() { return "nothin" }
+      cmd: function(system, what, data) {
+        return "error: no such system"
+      },
+      showexception: function(str) {
+        $("body").append("Error: " + str)
+      }
     }
   }
 
