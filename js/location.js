@@ -13,7 +13,7 @@ $(function() {
         return;
       }
     }
-    setTimeout(loop, 2000)
+    setTimeout(loop, 100)
   }
   loop()
 });
