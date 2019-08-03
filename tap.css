@@ -30,7 +30,7 @@ body, html {
 }
 
 .head {
-    background-color: #000000;
+    background-color: #111111;
     color: #DDDDDD;
     width: 100%;
     display: flex;
@@ -39,14 +39,17 @@ body, html {
 
 .head .text {
     text-align: left;
-    padding: .7em 1em .4em 1em;
+    padding: .9em 1em .9em 1em;
     font-family: "Gothic A1";
     font-weight: 900;
 }
 
+#name {
+    padding-left: 1em;
+}
+
 #settings {
-    background-color: #000000;
-    border-bottom: 2px solid #FFFFFF;
+    background-color: #444444;
     font-weight: 900;
 }
   
