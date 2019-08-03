@@ -1,0 +1,59 @@
+body {
+    background-color: #000000;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 1081px) {
+  .screen {
+    width: 1080px;
+    height: 1920px;
+    transform: scale(0.5);
+    margin: auto;
+    border: 4px solid green;
+  }
+}
+  
+.screen {
+  background-color: #000000;
+  color: #EEEEEE;
+  font-size: 400%;
+  background-image: linear-gradient(#444444, black);
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.head {
+    background-color: #000000;
+    color: #DDDDDD;
+    width: 100%;
+    border-radius: 0 0 .2em .2em;
+}
+
+.head .text {
+    text-align: left;
+    padding: .9em 0em .9em 1em;
+    border-bottom: 9px dashed #FFAAFF;
+    font-family: "Gothic A1";
+    font-weight: 900;
+}
+  
+.storyscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox {
+  background-color: #333333;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  border: 9px solid #FFAAEE;
+  margin: 1em;
+}
+
+.padding {
+    margin: auto;
+}

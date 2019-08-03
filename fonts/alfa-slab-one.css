@@ -2,5 +2,5 @@
   font-family: 'Alfa Slab One';
   font-style: normal;
   font-weight: 400;
-  src: local('Alfa Slab One Regular'), local('AlfaSlabOne-Regular'), url('alfa-slab-one.ttf') format('truetype');
+  src: local('Alfa Slab One Regular'), local('AlfaSlabOne-Regular'), url(' https://fonts.gstatic.com/s/alfaslabone/v9/6NUQ8FmMKwSEKjnm5-4v-4Jh2dJhfg.ttf') format('truetype');
 }

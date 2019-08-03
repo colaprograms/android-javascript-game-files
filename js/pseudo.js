@@ -21,6 +21,7 @@ var pseudolocation = {
             }
         }
         if(system == "visibility" && what == "show") {
+            $("body").css("visibility", "visible");
             return "done: shown";
         }
         if(system == "settingsactivity" && what == "start") {
