@@ -22,6 +22,7 @@ var startgame = function() {
     var makevisible = function() { cmd("visibility", "show", ""); }   
     startlocation();
     makevisible();
+    $(".text").click(settings);
 }
 
 $(startgame);
