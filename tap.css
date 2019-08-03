@@ -18,7 +18,7 @@ body, html {
   height: 100%;
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1081px) {
   .screen {
     width: 320px;
     height: 540px;
@@ -75,4 +75,8 @@ body, html {
 .largepadding {
     margin: auto;
     flex-grow: 2;
+}
+
+pre.green {
+    color: #00FF00;
 }
