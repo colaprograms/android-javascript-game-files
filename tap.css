@@ -58,11 +58,13 @@ body, html {
 
 .textbox {
   background-color: #000000;
-  padding: 1em;
+  padding: 1em 2em;
   text-align: center;
   border-bottom: 4px solid #FFFFFF;
   margin: 1em;
   border-radius: 0em 2em 2em 0;
+  font-family: "Gothic A1";
+  font-weight: 700;
 }
 
 .padding {
