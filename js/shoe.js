@@ -19,7 +19,10 @@ var settings = function() {
 
 var startgame = function() {
     var startlocation = function() { cmd("location", "start", ""); }
-    var makevisible = function() { cmd("visibility", "show", ""); }   
+    var makevisible = function() {
+        $("body").css("visibility", "visible");
+        cmd("visibility", "show", "");
+    }   
     startlocation();
     makevisible();
     $(".text").click(settings);
