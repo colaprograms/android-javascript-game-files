@@ -1,19 +1,21 @@
 "use strict";
 
-$(function() {
-  var set_where = function(s) {
-    $("#location").html(s)
-  }
-  var loop = function() {
-    var answer = android.cmd("location", "get", "");
-    if(answer.substring(0, 6) == "done: ") {
-      var where = answer.substring(6)
-      if(where != "null") {
-        set_where(where)
-        return;
-      }
+var getlocation = function() {
+    var where = cmd("location", "get", "");
+    return JSON.parse(where);
+}
+
+var wait_for_location_and_then_set = function() {
+    var set_where = function(s) { $("#location").html(s); }
+    var loop = function() {
+        var where = getlocation();
+        if(where !== null) {
+            set_where(where);
+            return;
+        }
+        setTimeout(loop, 100);
     }
-    setTimeout(loop, 100)
-  }
-  loop()
-});
+    loop()
+}
+
+$(wait_for_location_and_then_set);
