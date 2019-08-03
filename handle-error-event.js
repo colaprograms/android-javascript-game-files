@@ -9,6 +9,7 @@ window.addEventListener(
         if(e.error) {
           android.showexception(`${e.message}\n File: ${e.filename}\n Line: ${e.lineno}\n Column: ${e.colno}\nStack:\n${e.error.stack}`);
         }
+      }
     },
     true
 );

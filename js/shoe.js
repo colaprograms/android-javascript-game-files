@@ -25,7 +25,7 @@ var startgame = function() {
     }   
     startlocation();
     makevisible();
-    $(".text").click(settings);
+    $("#settings").click(settings);
 }
 
 $(startgame);
