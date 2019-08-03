@@ -3,15 +3,6 @@ body {
     visibility: hidden;
 }
 
-@media screen and (min-width: 1281px) {
-  .screen {
-    width: 320px;
-    height: 540px;
-    margin: auto;
-    border: 4px solid green;
-  }
-}
-  
 .screen {
   background-color: #000000;
   color: #EEEEEE;
@@ -20,6 +11,17 @@ body {
   flex-direction: column;
   justify-content: center;
   display: flex;
+  margin: auto;
+  height: 100%;
+}
+
+@media screen and (min-width: 1281px) {
+  .screen {
+    width: 320px;
+    height: 540px;
+    margin: auto;
+    border: 4px solid green;
+  }
 }
 
 .head {
