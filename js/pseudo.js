@@ -29,7 +29,7 @@ var pseudolocation = {
         return `error: pseudo doesn't know about cmd(${system}, ${what}, ${data})`;
       },
       showexception: function(str) {
-        $("body").append("<pre>" + str + "</pre>")
+        $("body").append("<pre class='green'>" + str + "</pre>")
       }
     }
   }
