@@ -11,14 +11,13 @@ body, html {
   background-color: #000000;
   color: #EEEEEE;
   font-size: 100%;
-  background-image: linear-gradient(#444444, black);
+  background-image: linear-gradient(#333333, #000000);
   flex-direction: column;
   justify-content: center;
   display: flex;
   height: 100%;
 }
 
-/*
 @media screen and (min-width: 1281px) {
   .screen {
     width: 320px;
@@ -27,21 +26,27 @@ body, html {
     border: 4px solid green;
   }
 }
-*/
 
 .head {
     background-color: #000000;
     color: #DDDDDD;
     width: 100%;
-    border-radius: 0 0 .2em .2em;
+    //border-bottom: 4px dashed #FFAAFF;
+    display: flex;
+    flex-direction: row;
 }
 
 .head .text {
     text-align: left;
-    padding: .9em 0em .9em 1em;
-    border-bottom: 4px dashed #FFAAFF;
+    padding: .9em 1em .9em 1em;
     font-family: "Gothic A1";
     font-weight: 900;
+}
+
+#settings {
+    background-color: #330033;
+    border-bottom: 2px solid #FFFFFF;
+    margin-bottom: -2px;
 }
   
 .storyscreen {
@@ -52,11 +57,10 @@ body, html {
 }
 
 .textbox {
-  background-color: #333333;
+  background-color: #000000;
   padding: 1em;
-  border-radius: 1em;
   text-align: center;
-  border: 2px solid #FFAAEE;
+  border-bottom: 2px solid #FFFFFF;
   margin: 1em;
 }
 
