@@ -1,15 +1,17 @@
 "use strict";
 
 var filelist = [
-  "utilities.js",
-  "location.js"
+  "utilities.js location.js",
+  "mapscreen/map.js"
 ]
 
-var run_when_done = [];
-
-window.$ondone = function(fn) {
-  run_when_done.push(fn);
-}
+filelist = Array.prototype.concat.apply(
+  [],
+  filelist.map(
+    (it) => it.split(/\s+/)
+              .filter((it) => it !== "")
+  )
+)
 
 var file_error_function_generator = function(filename) {
   return function(jqXHR, textStatus, errorThrown) {
@@ -19,16 +21,6 @@ var file_error_function_generator = function(filename) {
     console.log("errorThrown =", errorThrown)
   }
 };
-
-(function() {
-  var counter = 0;
-  window.$done = function() {
-    counter += 1;
-    if(counter == filelist.length) {
-      run_when_done.forEach(function(fn) { fn(); });
-    }
-  };
-})();
 
 filelist.forEach(function(file, index) {
   $.ajax({

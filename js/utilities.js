@@ -16,7 +16,7 @@ var cmd = function(system, what, data) {
 }
 
 window.actions = {
-  start_settings: function() { cmd("settingsactivity", "start", "") },
+  start_settings_activity: function() { cmd("settingsactivity", "start", "") },
   start_location: function() { cmd("location", "start", ""); },
   makevisible: function() {
     $("body").css("visibility", "visible");
@@ -24,11 +24,10 @@ window.actions = {
   }
 };
 
-$ondone(
+$(
   function() {
     actions.makevisible()
     actions.start_location()
-    $("#settings").click(settings);
+    $("#settings").click(actions.start_settings_activity);
   }
 );
-$done();

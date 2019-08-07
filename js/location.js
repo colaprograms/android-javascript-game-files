@@ -5,7 +5,7 @@ var getlocation = function() {
     return JSON.parse(where);
 }
 
-$ondone(
+$(
   function() {
     cmd("location", "start", "");
     var set_where = function(s) { $("#location").html(s); }
@@ -20,5 +20,3 @@ $ondone(
     loop()
   }
 );
-
-$done();
