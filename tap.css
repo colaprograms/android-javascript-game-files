@@ -61,6 +61,17 @@ body, html {
   align-items: center;
 }
 
+.infobox {
+  background-color: #000000;
+  padding: 1em 2em;
+  text-align: center;
+  border-bottom: 4px solid #FFFFFF;
+  margin: 1em;
+  font-family: "Gothic A1";
+  text-shadow: 2px 1px 0px #336633;
+  font-weight: 700;
+}
+
 .textbox {
   background-color: #000000;
   padding: 1em 2em;
