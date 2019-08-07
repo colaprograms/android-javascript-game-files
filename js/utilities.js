@@ -18,11 +18,27 @@ var cmd = function(system, what, data) {
 window.actions = {
   start_settings_activity: function() { cmd("settingsactivity", "start", "") },
   start_location: function() { cmd("location", "start", ""); },
+  start_screen: function(name) {
+    if(uiscreens[name] === undefined) {
+      throw Error("there is no screen called " + name);
+    }
+    uiscreens[name].start();
+  },
   makevisible: function() {
     $("body").css("visibility", "visible");
     cmd("visibility", "show", "");
   }
 };
+
+var uiscreens = {
+};
+
+var makescreen = function(screen) {
+  if(screen.name === undefined) {
+    throw Error("screen.name is unset");
+  }
+  uiscreens[screen.name] = screen;
+}
 
 $(
   function() {
